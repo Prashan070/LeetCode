@@ -24,6 +24,9 @@ class Solution {
         // return arr;
 
         // approach 2
+        //T.C=o(n+m) AND S.C- o(n+k)
+        //nis length of num1 and m is lenght of num2
+        //hashset space n and k is unique number
         HashSet<Integer> set = new HashSet<>();
         HashSet<Integer> ans = new HashSet<>();
 
