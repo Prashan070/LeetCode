@@ -5,6 +5,7 @@ class Solution {
     for( int i= 0 ; i< nums.length ; i++){
         if ( count == 0){
             cand = nums[i];
+            count++;
         }else if(cand == nums[i]){
             count++;
         }else{
