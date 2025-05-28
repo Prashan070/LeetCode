@@ -3,13 +3,13 @@ class Solution {
         int i = 0 ; 
         int j = nums.length -1;
 
-        while(i<=j){
+        while(i<j){
             if(nums[i]+nums[j] == target){
                 return new int[]{i+1, j+1};
             }else if(nums[i] + nums[j] > target){
                 j--;
             }else{
-                i--;
+                i++;
             }
         }
         return new int[]{};
