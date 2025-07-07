@@ -4,12 +4,17 @@ class Solution {
         if (n == 1) {
             return 1;
         }
-        int[] dp = new int[n + 1];
-        dp[1] = 1;
-        dp[2] = 2;
-        for (int i = 3; i <= n; i++) {
-            dp[i] = dp[i - 1] + dp[i - 2];
+        if (n == 2) {
+            return 2;
         }
-        return dp[n];
+        int a = 1;
+        int b = 2;
+
+        for (int i = 3; i <= n; i++) {
+            int sum = a + b;
+            a = b;
+            b = sum;
+        }
+        return b;
     }
 }
